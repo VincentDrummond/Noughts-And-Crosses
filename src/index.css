@@ -1,0 +1,87 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-image: linear-gradient(
+    45deg,
+    hsl(240deg 54% 95%) 0%,
+    hsl(252deg 98% 96%) 4%,
+    hsl(269deg 100% 95%) 8%,
+    hsl(289deg 100% 95%) 12%,
+    hsl(300deg 100% 94%) 16%,
+    hsl(300deg 100% 93%) 20%,
+    hsl(300deg 100% 92%) 24%,
+    hsl(305deg 100% 91%) 29%,
+    hsl(315deg 100% 91%) 33%,
+    hsl(325deg 100% 90%) 37%,
+    hsl(337deg 100% 89%) 42%,
+    hsl(350deg 100% 88%) 47%,
+    hsl(4deg 100% 87%) 52%,
+    hsl(15deg 100% 84%) 57%,
+    hsl(24deg 100% 80%) 62%,
+    hsl(31deg 100% 77%) 67%,
+    hsl(37deg 100% 73%) 72%,
+    hsl(41deg 100% 69%) 77%,
+    hsl(46deg 100% 65%) 83%,
+    hsl(49deg 100% 61%) 89%,
+    hsl(52deg 100% 57%) 94%,
+    hsl(55deg 100% 50%) 100%
+    );
+}
+
+.game-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 600px;
+    height: 600px;
+    gap: 20px;
+}
+
+.game-grid button {
+    font-size: 9rem;
+    border: 20px rgba(153, 50, 204, 0.8) solid;
+    border-radius: 40px;
+    color: rgb(153, 50, 204);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    background: rgba(153, 50, 204, 0.3)
+}
+
+.game-grid button:hover {
+    border-radius: 30px;
+    background: none;
+}
+
+.game-grid button:active {
+    transform: scale(0.97);
+}
+
+.gameState {
+    color: rgb(153, 50, 204);
+    font-size: 3rem;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.boldText {
+    font-weight: 900;
+}

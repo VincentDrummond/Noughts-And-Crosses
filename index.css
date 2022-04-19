@@ -1,0 +1,115 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-size: 10px;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  font-family: "Century Gothic", sans-serif;
+  color: #d25564;
+  font-size: 3rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(
+    45deg,
+    hsl(240deg 54% 95%) 0%,
+    hsl(252deg 98% 96%) 4%,
+    hsl(269deg 100% 95%) 8%,
+    hsl(289deg 100% 95%) 12%,
+    hsl(300deg 100% 94%) 16%,
+    hsl(300deg 100% 93%) 20%,
+    hsl(300deg 100% 92%) 24%,
+    hsl(305deg 100% 91%) 29%,
+    hsl(315deg 100% 91%) 33%,
+    hsl(325deg 100% 90%) 37%,
+    hsl(337deg 100% 89%) 42%,
+    hsl(350deg 100% 88%) 47%,
+    hsl(4deg 100% 87%) 52%,
+    hsl(15deg 100% 84%) 57%,
+    hsl(24deg 100% 80%) 62%,
+    hsl(31deg 100% 77%) 67%,
+    hsl(37deg 100% 73%) 72%,
+    hsl(41deg 100% 69%) 77%,
+    hsl(46deg 100% 65%) 83%,
+    hsl(49deg 100% 61%) 89%,
+    hsl(52deg 100% 57%) 94%,
+    hsl(55deg 100% 50%) 100%
+  );
+}
+
+.mainGameBoard {
+  width: 600px;
+  height: 600px;
+  border: black solid 5px;
+}
+
+.gameSquare {
+  width: 30px;
+  height: 30px;
+  border: black solid 5px;
+}
+/* 
+.board-row {
+  display: flex;
+  justify-content: center;
+}
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.status {
+  font-family: "Century Gothic", sans-serif;
+  font-size: 4rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.square {
+  background: #ffaa;
+  border: 10px solid #d25564;
+  float: left;
+  border-radius: 20px;
+  font-size: 9rem;
+  font-weight: bold;
+  line-height: 34px;
+  margin-right: 20px;
+  margin-top: 20px;
+  padding: 0;
+  text-align: center;
+  width: 150px;
+  height: 150px;
+  color: #d25564;
+}
+
+.square:hover {
+  border: 10px solid #d57764;
+  box-shadow: 0px 0px 30px 2px #d57764;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.game {
+  display: flex;
+  flex-direction: row;
+}
+
+/* .game-info {
+    margin-left: 20px;
+} */
